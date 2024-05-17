@@ -141,19 +141,23 @@ div.top2{
 }
 
 div.scratch{
-    margin-top: -290px;
+
 }
 div.scratch1{
-    margin-top: -530px;
+  position: absolute;
 }
 div.scratch2{
-    margin-top: -500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  top: 50px;
+  z-index: -1;
 }
 div.scratch3{
-    margin-top: -125px;
+ 
 }
 div.scratch4{
-    margin-top: -865px;
+ 
 }
 
 
