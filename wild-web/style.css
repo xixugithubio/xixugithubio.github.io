@@ -1,130 +1,161 @@
-/*reset project */
 body {
-    margin:0px;
-    background-color:rgb(88, 86, 91);
-}
-div {
-    box-sizing: border-box;
-}
-
-img {
+    margin:20px;
+    background-image: url('底面.png'); /* 替换为您的图片路径 */
+    
+  }
+  
+  div {
+    box-sizing:border-box;
+  }
+  
+  img {
+    width:100%;
+  }
+  source{
     width: 100%;
-}
+  }
+ 
+ div.m{
+    margin: 100px;
+ }
 
-/* typography */
+  div.largetext {
+    font-size:60px;
+    line-height:54px;
+  }
+  div.mediumtext2 {
+    font-size:47px;
+    line-height:52px;
+  }
+  
+  div.mediumtext {
+    font-size:27px;
+    line-height:32px;
+  }
+  
+  div.smalltext {
+    font-size:19px;
+    line-height:22px;
+  }
+  div.smalltext 2{
+    font-size:17px;
+    line-height:19px;
+  }
+  div.smallesttext {
+    font-size:14px;
+    line-height:18px;
+  }
+  
+  div.sans {
+    font-family: arial;
+    font-weight: bold;
+  }
 
-div.largetext {
-    font-size:100px;
-    line-height: 90px;
-}
+  
+  div.serif {
+    font-family: times;
+  }
 
-div.mediumtext {
-    font-size: 32px;
-    line-height: 34px;
-}
-div.smalltext {
-    font-size: 16px;
-    line-height: 19px;
-}
+  div.ltalic {
+    font-family: times;
+    font-style: bold italic;
+    font-weight: bolder;
+  }
 
-div.sans {
-    font-family: Arial, Helvetica, sans-serif;
-}
-div.serif {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.mono {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* typography */
-
-div.textblue {
-    color: blue;
-}
-
-div.textred {
-    color: red;
-}
-
-div.bgpink {
-    background-color: pink;
-}
-
-div.bggreen {
-    background-color: lightgreen;
-}
-
-/* layout */
-
-div.width100 {
+  div.w100 {
     width: 100%;
+    padding:5px;
+  }
+  div.w75 {
+  width: 75%;
+  padding:5px;
 }
-
-div.width80 {
-    width: 80%;
-}
-
-div.width75 {
-    width: 75%;
-}
-
-div.width66 {
-    width: 66.66%;
-}
-
-div.width60{
+div.w60 {
     width: 60%;
+    padding:5px;
+  }
+
+div.w50 {
+  width: 50%;
+  padding:5px;
+}
+div.w43 {
+    width: 43%;
+    padding:5px;
+  }
+
+div.w33 {
+  width: 33.333%;
+  padding:5px;
 }
 
-div.width50{
-    width: 50%;
-}
+div.w23 {
+    width: 23%;
+    padding:5px;
+  }
 
-div.width40 {
-    width: 40%;
-}
 
-div.width33 {
-    width: 33.33%;
-}
 
-div.width25 {
-    width: 25%;
-}
 
-div.container{
-    display: inline;
-    
-}
+/* design */
+
 div.row {
-    display:flex;
-    flex-wrap:wrap;
-  }
-  
-  div.col {
-    
-  }
-  
-  div.title {
-    margin-top:100px;
-    margin-bottom:100px;
-    text-align:center;
-  }
-  
-  div.side {
-    margin-left:auto;
-  }
-  
-  div.center {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  
-  div.main {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    border-bottom:1px solid black;
-  }
+  display:flex;
+  flex-wrap:wrap;
+}
+.video-container {
+    display: flex;  /* 启用Flexbox */
+    justify-content: space-around;  /* 在视频之间平均分配空间 */
+}
 
+div.col {
+    margin: 5px;
+}
+
+div.title {
+  margin-top:30px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+
+div.side {
+  margin-left:auto;
+}
+
+div.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+div.main {
+    margin-top: 80px; 
+  margin-bottom: 10px;
+  border-bottom:1px solid black;
+}
+div.top{
+    margin-top: 80px;
+}
+div.top2{
+    margin-top: 180px;
+}
+
+div.scratch{
+    margin-top: -290px;
+}
+div.scratch1{
+    margin-top: -530px;
+}
+div.scratch2{
+    margin-top: -500px;
+}
+div.scratch3{
+    margin-top: -125px;
+}
+div.scratch4{
+    margin-top: -865px;
+}
+
+
+/* color */
+ 

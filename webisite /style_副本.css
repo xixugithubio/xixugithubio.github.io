@@ -1,0 +1,300 @@
+body, html {
+    height: 100%; 
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin:0px;
+    padding:0px;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f6e1dc;
+    background-color: black;
+
+}
+div.poster {
+    margin:30px;
+    padding:30px; 
+    width:100%;
+    background-color: #69799d;
+    position: relative;
+  
+    /* 其他样式... */
+}
+
+div.poster.a {
+    background-color: red;
+}
+
+div.poster.b {
+    background-color: green;
+}
+
+div.poster.c {
+    background-color: pink;
+}
+
+
+div.rounded-rectangle {
+    position: relative;
+    top:-30px;
+    width: 340px; /* 长方形的宽度 */
+    height: 50px; /* 长方形的高度 */
+    background-color: #f6e1dc; /* 长方形的背景颜色 */
+    border-radius: 20px; /* 圆角的大小 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes moveText {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -100%;
+    }
+}
+  
+div.moving-text {
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    animation: moveText 13s linear infinite;
+}
+  
+div.goodnight {
+    margin-top: 20px;
+  
+}
+
+div.statistic {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInOut 5s infinite ease-in-out;
+   
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1; /* 完全不透明 */
+    }
+    50% {
+        opacity: 0; /* 完全透明 */
+    }
+}
+div.title1 {  
+    font-size: 180px;
+    line-height: 150px;
+    font-weight: bold;
+
+}
+div.title2 {
+    margin-left: 200px;
+    font-size: 180px;
+    line-height: 150px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes randomStretch {
+    0%, 100% {
+      transform: scaleX(1); /* 原始大小 */
+    }
+    10% {
+      transform: scaleX(1.1); /* 拉伸 10% */
+    }
+    20% {
+      transform: scaleX(0.9); /* 缩小 10% */
+    }
+    30% {
+      transform: scaleX(1.2); /* 拉伸 20% */
+    }
+    /* ...可以添加更多关键帧来制造“随机”感... */
+    90% {
+      transform: scaleX(1.05); /* 轻微拉伸 */
+    }
+  }
+
+div.title3 {
+    font-size: 180px;
+    line-height: 150px;
+    font-weight: bold;
+    animation: slideInOut 4s infinite ease-in-out;
+
+}
+@keyframes slideInOut {
+    0%, 100% {
+        transform: translateX(50%); /* 在动画的开始和结束，元素处于其原始位置 */
+    }
+    50% {
+        transform: translateX(00%); /* 在75%的时刻，元素向左滑出视图 */
+    }
+}
+div.rounded-triangle-right {
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6e1dc;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    border-radius: 15px;
+    animation: scaleUpDown 3s infinite alternate ease-in-out;
+}
+
+@keyframes scaleUpDown {
+    0% {
+        transform: scale(0.9); /* 初始状态，未缩放 */
+    }
+    100% {
+        transform: scale(1.3); /* 最大放大到150% */
+    }
+}
+div.question {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+div.footer {
+    margin-top: 40px;
+}
+
+div.instruction {
+    font-size: 18px;
+    margin-top: 10px;
+}
+div.text{
+    font-size: 23px;
+    margin-right :600px;
+}
+
+div.title1.a {
+    color:red;
+}
+
+div.title1.b {
+    color:blue;
+}
+
+div.title1.c {
+    color:green;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+div.blocks-container { */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+div.color-block {
+    position: absolute;
+    width: 40px; /* 小正方形的大小 */
+    height: 40px;
+    background-color: #f6e1dc; /* 初始颜色 */
+    animation: changeColor 5s infinite; /* 动画 */
+}
+
+@keyframes changeColor {
+    0%, 100% { background-color: #f6e1dc; }
+    /* 25% { background-color: #000000; } */
+    /* 25% { background-color: #ffffff; } */
+    /* 25% { background-color: #000000; } */
+}
+
+div.error-banner {
+    margin-top: 50px;
+    width: 100%; /* 宽度充满整个屏幕 */
+    /* padding: 30px; 文字周围的空间 */
+    background-color: #ff0000; /* 初始背景色 */
+    color: #f6e1dc; /* 文字颜色 */
+    text-align: center; /* 文字居中 */
+    font-size: 35px; /* 文字大小 */
+}
+
+
+#text-list {
+    /* 使文本列在屏幕中间显示 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+    height: 100vh;
+}
+
+div.zoom-text {
+    color: #f6e1dc;
+    /* 设置初始文本样式 */
+    font-size: 37px; /* 初始字体大小 */
+    opacity: 1; /* 完全不透明 */
+    transition: font-size 2s, opacity 2s; /* 平滑过渡动画 */
+}
+
+/* 隐藏除第一个之外的所有文本 */
+div.zoom-text:not(:first-child) {
+    font-size: 0; /* 其他文本初始不可见 */
+}
+
+div.zoom-text:hover {
+    font-size: 61px; /* 鼠标悬停时的字体大小 */
+    transition: font-size 1s ease; /* 鼠标悬停时的过渡效果 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+}
+
+div.text1{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    font-size:30px;
+    margin-bottom: 100px;
+}
+
+
+div.text1.a {
+    color:red;
+}
+
+div.text1.b {
+    color:blue;
+}
+
+div.text1.c {
+    color:green;
+}
+
+.bouncing-rectangle {
+    margin-right: auto;
+    margin-left: auto;
+    height: 8px; 
+    width: 260px;/* Height of the rectangle */
+    background-color: #f6e1dc; /* Rectangle color */
+    border-radius: 25px 25px 0 0; /* Rounded corners on the top */
+    animation: bounce 2s infinite ease-in-out; /* Bouncing animation */
+  
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Rectangle's original position */
+    }
+    50% {
+        transform: translateY(-30px); /* Move rectangle 20 pixels up */
+    }
+}
+
+
+
